@@ -2,7 +2,7 @@ import { View, Text, TextInput, TouchableOpacity, Image } from "react-native";
 import { styles } from "@/styles/_joinstyle";
 import { HEROLOGOGREEN, GOOGLELOGO, FACEBOOKLOGO } from "@/constants";
 
-export default function Join() {
+export default function SignIn() {
   return (
     <View style={styles.container}>
       <View style={styles.iconsection}>
@@ -11,19 +11,11 @@ export default function Join() {
       </View>
 
       <View style={styles.titleTextGroup}>
-        <Text style={styles.titleText}>Join Us</Text>
-        <Text style={styles.subText}>Create an account to continue</Text>
+        <Text style={styles.titleText}>Welcome Back</Text>
+        <Text style={styles.subText}>Sign in to continue</Text>
       </View>
 
       <View style={styles.formGroup}>
-        <View>
-          <Text style={styles.formLabel}>Full Name</Text>
-          <TextInput
-            style={styles.formControl}
-            placeholder="Enter your full name"
-          />
-        </View>
-
         <View>
           <Text style={styles.formLabel}>Email</Text>
           <TextInput
@@ -42,10 +34,11 @@ export default function Join() {
               secureTextEntry
             />
           </View>
+          <Text style={styles.forgotPasswordText}>Forgot Password?</Text>
         </View>
 
         <TouchableOpacity style={styles.primaryButton}>
-          <Text style={styles.buttonText}>Join Now</Text>
+          <Text style={styles.buttonText}>Sign In</Text>
         </TouchableOpacity>
       </View>
 
@@ -76,8 +69,8 @@ export default function Join() {
       </View>
 
       <View style={styles.signupgroup}>
-        <Text style={styles.signupTitleText}>Already have an account? </Text>
-        <Text style={styles.signupSubTitleText}>Sign In</Text>
+        <Text style={styles.signupTitleText}>Don't have an account? </Text>
+        <Text style={styles.signupSubTitleText}>Join Now</Text>
       </View>
     </View>
   );
